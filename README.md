@@ -4,9 +4,13 @@ Turn a **user story or API spec** into a **structured, executable test suite** i
 
 Built by a QA engineer, for QA engineers: it doesn't just list happy paths. It covers negative, edge and security cases, ties each case to an acceptance criterion, and **flags the gaps in your requirements** as open questions for the product owner.
 
-```text
-user story / API spec  ──►  Claude (structured output)  ──►  validated TestSuite  ──►  Markdown · CSV · JSON
-```
+## How it works
+
+![How the AI Test Case Generator works](docs/how-it-works.svg)
+
+## What we get from it
+
+![What we get from the AI Test Case Generator](docs/what-we-get.svg)
 
 ## ✨ Features
 
@@ -71,6 +75,7 @@ testgen/
   exporters.py   # Markdown, CSV and JSON renderers
   cli.py         # Command-line interface
 examples/        # Sample user story and API spec
+docs/            # how-it-works and what-we-get diagrams (SVG)
 tests/           # Offline unit tests (no API key needed)
 ```
 
