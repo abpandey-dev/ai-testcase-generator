@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect width="1200" height="640" fill="#FFFFFF"/>
+<text x="40" y="52" font-size="28" fill="#0F172A" font-weight="700">AI Test Case Generator: what we get from it</text>
+<text x="40" y="80" font-size="15" fill="#475569">Real QA coverage plus a requirement review, in seconds</text>
+<rect x="24" y="104" width="620" height="330" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="44" y="136" font-size="16" fill="#0F172A" font-weight="700">Example test case</text>
+<text x="44" y="158" font-size="12" fill="#64748B">generated from examples/login_story.md (abridged)</text>
+<text x="44" y="184" font-size="14" fill="#0F172A" font-weight="700">TC-007: Account locks after 3 consecutive wrong OTPs</text>
+<rect x="44" y="198" width="79.6" height="24" rx="12.0" fill="#FEE2E2"/><text x="83.8" y="214.5" font-size="12" fill="#B91C1C" font-weight="600" text-anchor="middle">negative</text>
+<rect x="131.6" y="198" width="36.4" height="24" rx="12.0" fill="#FEE2E2"/><text x="149.79999999999998" y="214.5" font-size="12" fill="#B91C1C" font-weight="600" text-anchor="middle">P0</text>
+<rect x="176.0" y="198" width="94.0" height="24" rx="12.0" fill="#FEE2E2"/><text x="223.0" y="214.5" font-size="12" fill="#B91C1C" font-weight="600" text-anchor="middle">covers AC4</text>
+<text x="44" y="252" font-size="13" fill="#334155">1. Request an OTP for a registered email</text>
+<text x="44" y="274" font-size="13" fill="#334155">2. Enter an incorrect OTP three times</text>
+<text x="44" y="296" font-size="13" fill="#334155">3. Enter the correct OTP</text>
+<text x="44" y="340" font-size="13" fill="#0F172A" font-weight="700">Expected result:</text>
+<text x="44" y="362" font-size="13" fill="#334155">Login is rejected and the account is locked</text>
+<text x="44" y="384" font-size="13" fill="#334155">for 15 minutes.</text>
+<rect x="668" y="104" width="508" height="330" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="688" y="136" font-size="16" fill="#0F172A" font-weight="700">Gaps it flags in the requirements</text>
+<text x="688" y="158" font-size="12" fill="#64748B">open questions for the product owner</text>
+<text x="688" y="190" font-size="14" fill="#334155">• Does the lockout apply per device or per</text>
+<text x="688" y="214" font-size="14" fill="#334155">   account?</text>
+<text x="688" y="238" font-size="14" fill="#334155"></text>
+<text x="688" y="262" font-size="14" fill="#334155">• Does requesting a new OTP reset the</text>
+<text x="688" y="286" font-size="14" fill="#334155">   wrong-attempt counter?</text>
+<text x="688" y="330" font-size="13" fill="#475569">The story didn&#x27;t say, so it asks before anyone</text>
+<text x="688" y="352" font-size="13" fill="#475569">writes the wrong test.</text>
+<rect x="24" y="458" width="276" height="160" rx="14" fill="#EFF6FF" stroke="#BFDBFE"/>
+<text x="44" y="504" font-size="34" fill="#1D4ED8" font-weight="800">6</text>
+<text x="44" y="534" font-size="14" fill="#0F172A" font-weight="700">test categories</text>
+<text x="44" y="558" font-size="12" fill="#475569">positive, negative, edge,</text>
+<text x="44" y="576" font-size="12" fill="#475569">security, usability, performance</text>
+<rect x="316" y="458" width="276" height="160" rx="14" fill="#FFFBEB" stroke="#FDE68A"/>
+<text x="336" y="504" font-size="34" fill="#B45309" font-weight="800">P0-P3</text>
+<text x="336" y="534" font-size="14" fill="#0F172A" font-weight="700">priorities</text>
+<text x="336" y="558" font-size="12" fill="#475569">P0 = release blocker,</text>
+<text x="336" y="576" font-size="12" fill="#475569">P3 = nice to have</text>
+<rect x="608" y="458" width="276" height="160" rx="14" fill="#F0FDF4" stroke="#BBF7D0"/>
+<text x="628" y="504" font-size="30" fill="#15803D" font-weight="800">AC → TC</text>
+<text x="628" y="534" font-size="14" fill="#0F172A" font-weight="700">traceability</text>
+<text x="628" y="558" font-size="12" fill="#475569">every case names the</text>
+<text x="628" y="576" font-size="12" fill="#475569">acceptance criterion it covers</text>
+<rect x="900" y="458" width="276" height="160" rx="14" fill="#FAF5FF" stroke="#E9D5FF"/>
+<text x="920" y="504" font-size="34" fill="#6E56CF" font-weight="800">3</text>
+<text x="920" y="534" font-size="14" fill="#0F172A" font-weight="700">export formats</text>
+<text x="920" y="558" font-size="12" fill="#475569">Markdown, CSV for test</text>
+<text x="920" y="576" font-size="12" fill="#475569">management tools, JSON</text>
+</svg>
